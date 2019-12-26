@@ -1,5 +1,5 @@
-<%@page import="www.jcc.com.control.BoardControl"%>
 <%@page import="www.jcc.com.vo.Board"%>
+<%@page import="www.jcc.com.control.BoardControl"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
@@ -36,7 +36,7 @@
 					
 					<td><%=list.get(i).getId()%></td>
 					<td>
-						<a href="#"><%=list.get(i).getTitle()%></a>
+						<a href="./detail.jsp?id=<%=list.get(i).getId()%>"><%=list.get(i).getTitle()%></a>
 					</td>
 					<td><%=list.get(i).getWriter()%></td>
 					<td><%=list.get(i).getWdate()%></td>
@@ -46,6 +46,8 @@
 			</tbody>
 		</table>
 	</div>
+	
+	<a href="./writeForm.jsp">게시판 작성</a>
 
 </body>
 </html>

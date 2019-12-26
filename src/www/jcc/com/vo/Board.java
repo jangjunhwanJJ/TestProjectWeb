@@ -52,5 +52,12 @@ public class Board {
 	public void setMdate(String mdate) {
 		this.mdate = mdate;
 	}
+	
+		
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "title:" + this.title + "/content:"+this.content + "/writer:" + this.writer;
+	}
 
 }
